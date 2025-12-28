@@ -7,15 +7,16 @@ function NavItem({ label, href }) {
       href={href}
       className="
         flex items-center gap-2 px-5 py-2 rounded-xl
-        bg-purple-600/80 text-white font-semibold
+        bg-emerald-500/90 text-white font-semibold
         shadow-md
-        hover:bg-purple-500 transition
+        hover:bg-emerald-400 transition
       "
       whileHover="hover"
     >
       <motion.span
         variants={{ hover: { rotate: 180 } }}
         transition={{ duration: 0.4 }}
+        className="text-teal-200"
       >
         <FaCog />
       </motion.span>
