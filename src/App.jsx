@@ -168,6 +168,66 @@ with an eye for detail and smooth interaction.
   
   </motion.div>
 </div>
+{/* ABOUT */}
+<motion.section
+  id="about"
+  variants={fadeUp}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: false, amount: 0.3 }}
+  className="
+    min-h-screen flex items-center justify-center px-6 pt-32
+    bg-gray-100 text-gray-900
+    dark:bg-[#0b1f1a] dark:text-white
+  "
+>
+  <div className="max-w-4xl grid md:grid-cols-2 gap-12 items-center">
+
+    {/* LEFT – TEXT */}
+    <div>
+      <h2 className="text-3xl md:text-4xl font-bold mb-6">
+        About Me
+      </h2>
+
+      <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-4">
+        I’m a Computer Science student with a strong interest in frontend
+        development and interface design. I enjoy working at the
+        intersection of logic and aesthetics — where functionality meets
+        clarity.
+      </p>
+
+      <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
+        My focus is on building interfaces that feel calm, intuitive, and
+        thoughtfully structured. I value clean layouts, smooth motion,
+        and user experiences that feel effortless rather than overwhelming.
+      </p>
+    </div>
+
+    {/* RIGHT – HIGHLIGHT CARD */}
+    <motion.div
+      whileHover={{ y: -6 }}
+      transition={{ type: "spring", stiffness: 180 }}
+      className="
+        rounded-2xl p-6
+        bg-gradient-to-br from-emerald-500 to-teal-500
+        text-white shadow-xl
+      "
+    >
+      <h3 className="text-xl font-semibold mb-4">
+        What I Enjoy Working On
+      </h3>
+
+      <ul className="space-y-3 text-sm">
+        <li>• Frontend development with React</li>
+        <li>• UI design and layout refinement</li>
+        <li>• Motion & interaction design</li>
+        <li>• Building responsive, user-friendly interfaces</li>
+      </ul>
+    </motion.div>
+
+  </div>
+</motion.section>
+
 
         </div>
       </motion.section>
