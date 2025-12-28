@@ -30,7 +30,7 @@ function Navbar() {
             "
             whileHover={{ scale: 1.05 }}
           >
-            VANSH
+            KRITIKA
           </motion.a>
 
           {/* DESKTOP NAV */}
