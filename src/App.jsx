@@ -45,12 +45,10 @@ function App() {
               <a
                 href="#projects"
                 className="
-                  button-animate px-6 py-2 rounded-lg font-semibold
-                  border border-gray-900 text-gray-900
-                  hover:bg-gray-900 hover:text-white
-                  dark:border-white dark:text-white
-                  dark:hover:bg-white dark:hover:text-gray-900
-                  transition
+                  button-animate px-6 py-2 rounded-lg font-semibold text-white
+                  bg-gradient-to-r from-emerald-500 to-teal-500
+                  hover:from-teal-500 hover:to-emerald-500
+                  transition-all duration-300
                 "
               >
                 View Projects
