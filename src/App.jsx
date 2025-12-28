@@ -120,22 +120,31 @@ function App() {
           </motion.div>
 
           {/* PHOTO CARD */}
-          <div className="hidden md:block">
-            <motion.div
-              className="relative w-[300px] h-[420px]"
-              animate={{ y: [0, -12, 0] }}
-              transition={{ repeat: Infinity, duration: 4 }}
-            >
-              <div className="absolute inset-0 rounded-[160px] overflow-hidden border-4 border-white/20">
-                <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500 to-teal-500 blur-3xl opacity-40" />
-                <img
-                  src="/kritika-portfolio-pic.png"
-                  alt="Kritika"
-                  className="relative w-full h-full object-cover"
-                />
-              </div>
-            </motion.div>
-          </div>
+          <div className="hidden md:block perspective">
+  <motion.div
+    className="relative w-[300px] h-[420px] preserve-3d"
+    whileHover={{ rotateY: 180 }}
+    transition={{ duration: 0.8, ease: "easeInOut" }}
+    style={{ transformStyle: "preserve-3d" }}
+  >
+    {/* FRONT */}
+    <div className="absolute inset-0 backface-hidden rounded-[160px] overflow-hidden">
+      <img
+        src="/kritika-portfolio-pic.png"
+        alt="Kritika"
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+    {/* BACK */}
+    <div
+      className="absolute inset-0 backface-hidden rounded-[160px] bg-gray-900 text-white flex items-center justify-center"
+      style={{ transform: "rotateY(180deg)" }}
+    >
+      Back Content
+    </div>
+  </motion.div>
+</div>
 
         </div>
       </motion.section>
