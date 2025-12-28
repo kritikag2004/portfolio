@@ -129,7 +129,7 @@ function App() {
               <div className="absolute inset-0 rounded-[160px] overflow-hidden border-4 border-white/20">
                 <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500 to-teal-500 blur-3xl opacity-40" />
                 <img
-                  src="/profile.png"
+                  src="/kritika-portfolio-pic.png"
                   alt="Kritika"
                   className="relative w-full h-full object-cover"
                 />
