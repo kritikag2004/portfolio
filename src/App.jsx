@@ -169,6 +169,7 @@ with an eye for detail and smooth interaction.
   </motion.div>
 </div>
 {/* ABOUT */}
+{/* ABOUT */}
 <motion.section
   id="about"
   variants={fadeUp}
@@ -176,55 +177,86 @@ with an eye for detail and smooth interaction.
   whileInView="visible"
   viewport={{ once: false, amount: 0.3 }}
   className="
-    min-h-screen flex items-center justify-center px-6 pt-32
+    min-h-screen flex items-center justify-center px-6
     bg-gray-100 text-gray-900
     dark:bg-[#0b1f1a] dark:text-white
   "
 >
-  <div className="max-w-4xl grid md:grid-cols-2 gap-12 items-center">
+  <div className="max-w-5xl w-full grid md:grid-cols-2 gap-12 items-center">
 
     {/* LEFT – TEXT */}
     <div>
-      <h2 className="text-3xl md:text-4xl font-bold mb-6">
+      <h2 className="text-3xl md:text-4xl font-bold mb-4">
         About Me
       </h2>
 
-      <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-4">
-        I’m a Computer Science student with a strong interest in frontend
-        development and interface design. I enjoy working at the
-        intersection of logic and aesthetics — where functionality meets
-        clarity.
-      </p>
-
-      <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
-        My focus is on building interfaces that feel calm, intuitive, and
-        thoughtfully structured. I value clean layouts, smooth motion,
-        and user experiences that feel effortless rather than overwhelming.
+      <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed max-w-xl">
+        I’m a Computer Science student focused on frontend development and
+        interface design. I enjoy building calm, intuitive user experiences
+        where clarity, structure, and smooth interaction come together.
       </p>
     </div>
 
-    {/* RIGHT – HIGHLIGHT CARD */}
-    <motion.div
-      whileHover={{ y: -6 }}
-      transition={{ type: "spring", stiffness: 180 }}
-      className="
-        rounded-2xl p-6
-        bg-gradient-to-br from-emerald-500 to-teal-500
-        text-white shadow-xl
-      "
-    >
-      <h3 className="text-xl font-semibold mb-4">
-        What I Enjoy Working On
-      </h3>
+    {/* RIGHT – COMPACT CARDS */}
+    <div className="grid grid-cols-2 gap-4">
 
-      <ul className="space-y-3 text-sm">
-        <li>• Frontend development with React</li>
-        <li>• UI design and layout refinement</li>
-        <li>• Motion & interaction design</li>
-        <li>• Building responsive, user-friendly interfaces</li>
-      </ul>
-    </motion.div>
+      <motion.div
+        whileHover={{ y: -6 }}
+        className="
+          rounded-xl p-4
+          bg-gradient-to-br from-emerald-500 to-teal-500
+          text-white shadow-lg
+        "
+      >
+        <p className="text-sm font-semibold">Frontend</p>
+        <p className="text-xs opacity-90 mt-1">
+          React · Tailwind · UI structure
+        </p>
+      </motion.div>
 
+      <motion.div
+        whileHover={{ y: -6 }}
+        className="
+          rounded-xl p-4
+          bg-gradient-to-br from-emerald-500 to-teal-500
+          text-white shadow-lg
+        "
+      >
+        <p className="text-sm font-semibold">Design</p>
+        <p className="text-xs opacity-90 mt-1">
+          Layout · Spacing · Visual clarity
+        </p>
+      </motion.div>
+
+      <motion.div
+        whileHover={{ y: -6 }}
+        className="
+          rounded-xl p-4
+          bg-gradient-to-br from-emerald-500 to-teal-500
+          text-white shadow-lg
+        "
+      >
+        <p className="text-sm font-semibold">Motion</p>
+        <p className="text-xs opacity-90 mt-1">
+          Framer Motion · Micro-interactions
+        </p>
+      </motion.div>
+
+      <motion.div
+        whileHover={{ y: -6 }}
+        className="
+          rounded-xl p-4
+          bg-gradient-to-br from-emerald-500 to-teal-500
+          text-white shadow-lg
+        "
+      >
+        <p className="text-sm font-semibold">Mindset</p>
+        <p className="text-xs opacity-90 mt-1">
+          Calm · Consistent · User-first
+        </p>
+      </motion.div>
+
+    </div>
   </div>
 </motion.section>
 
@@ -234,7 +266,8 @@ with an eye for detail and smooth interaction.
 
       {/* PROJECTS */} 
       
-      <motion.section id="projects" variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.3 }} className="min-h-screen flex items-start justify-center pt-32 bg-white text-gray-900 dark:bg-gray-900 dark:text-white" > <div className="max-w-5xl w-full text-center"> <h2 className="text-3xl md:text-4xl font-bold mb-6"> Projects </h2> <p className="text-gray-600 dark:text-gray-400 text-lg mb-10"> A selection of projects showcasing my skills in frontend development, animations, and modern UI design. </p> 
+      <motion.section id="projects" variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.3 }} className="min-h-screen flex items-start justify-center pt-32
+bg-gray-100 text-gray-900 dark:bg-[#0b1f1a] dark:text-white" > <div className="max-w-5xl w-full text-center"> <h2 className="text-3xl md:text-4xl font-bold mb-6"> Projects </h2> <p className="text-gray-600 dark:text-gray-400 text-lg mb-10"> A selection of projects showcasing my skills in frontend development, animations, and modern UI design. </p> 
 
       {/* PROJECT CARDS */}
       
