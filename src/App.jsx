@@ -342,7 +342,7 @@ bg-gray-100 text-gray-900 dark:bg-[#0b1f1a] dark:text-white" > <div className="m
 
     <div className="flex justify-center gap-6 mb-6 text-2xl">
       <a href="https://github.com/kritikag2004" target="_blank" rel="noreferrer"><FaGithub /></a>
-      <a href="https://linkedin.com/in/kritika-gaur" target="_blank" rel="noreferrer"><FaLinkedin /></a>
+      <a href="https://www.linkedin.com/in/kritika-gaur-b7a844284" target="_blank" rel="noreferrer"><FaLinkedin /></a>
       <a href="https://instagram.com/kritikagaur19.__" target="_blank" rel="noreferrer"><FaInstagram /></a>
     </div>
 
