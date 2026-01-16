@@ -158,7 +158,7 @@ with an eye for detail and smooth interaction.
     "
   >
     <img
-      src="/kritika-portfolio-pic.png"
+      src="/kritika-portfolio-pi.jpeg"
       alt="Kritika"
       className="w-full h-full object-cover"
     />
