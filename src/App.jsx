@@ -347,7 +347,7 @@ bg-gray-100 text-gray-900 dark:bg-[#0b1f1a] dark:text-white" > <div className="m
     </div>
 
     <motion.form
-      action="https://formspree.io/f/mdangyol"
+      action="https://formspree.io/f/meezaegz"
       method="POST"
       className="space-y-4"
     >
